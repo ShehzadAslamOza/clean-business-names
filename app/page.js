@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Example API Call (Mock) - Replace with actual Gemini API integration
-async function useGeminiAIForCleaning(companyName, options) {
+async function geminiAIForCleaning(companyName, options) {
   // Mocking an API call to Gemini
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -64,7 +64,7 @@ export default function Home() {
   };
 
   const cleanWithAI = async () => {
-    const cleaned = await useGeminiAIForCleaning(companyName, {
+    const cleaned = await geminiAIForCleaning(companyName, {
       removeSymbols,
       titleCase,
       maxWords,
